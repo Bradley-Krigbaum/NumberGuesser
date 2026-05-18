@@ -1,0 +1,26 @@
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+._*
+
+# Ignore build/dependency folders
+node_modules/
+dist/
+build/
+bin/
+obj/
+Binaries/
+
+# Ignore makefiles
+Makefile
+!Makefile.in
+
+
+# Ignore environment/secret files
+.env
+*.pem
+
+# Ignore logs
+*.log
+npm-debug.log*
+

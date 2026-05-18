@@ -7,9 +7,9 @@ Core builds into a static library and is meant to contain common code intended f
 The `Scripts/` directory contains build scripts for Windows and Linux, and the `Vendor/` directory contains Premake binaries (currently version `5.0-beta2`).
 
 ## Getting Started
-1. `App/` and `Core/` are the two projects - you can edit the names of these folders and their contents to suit
-2. The three included Premake build files are `Build.lua`, `Core/Build-Core.lua` and `App/Build-App.lua` - you can edit these to customise your build configurations, edit the names of your projects and workspace/solution, etc.
-3. Open the `Scripts/` directory and run the appropriate `Setup` script to generate projects files. You can edit the setup scripts to change the type of project that is generated - out of the box they are set to Visual Studio 2022 for Windows and gmake for Mac and Linux.
+1. Open the `Scripts/` directory and run the appropriate `Setup` script to generate projects files. You can edit the setup scripts to change the type of project that is generated - out of the box they are set to Visual Studio 2022 for Windows and gmake for Mac and Linux.
+2. To generate the project binaries, run the `make` command from the project root directory.
+3. OPTIONAL: By default, the release binaries will be created. To change this, edit the config in the Makefile in the project root directory.
 
 ## Included
 - Some example code (in `App/Source` and `Core/Source`) to provide a starting point and test

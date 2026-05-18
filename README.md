@@ -9,7 +9,10 @@ The `Scripts/` directory contains build scripts for Windows and Linux, and the `
 ## Getting Started
 1. Open the `Scripts/` directory and run the appropriate `Setup` script to generate projects files. You can edit the setup scripts to change the type of project that is generated - out of the box they are set to Visual Studio 2022 for Windows and gmake for Mac and Linux.
 2. To generate the project binaries, run the `make` command from the project root directory.
-3. OPTIONAL: By default, the release binaries will be created. To change this, edit the config in the Makefile in the project root directory.
+
+## OPTIONAL
+- By default, the release binaries will be created. To change this, edit the config in the Makefile in the project root directory.
+- If you run into any errors with the provided premake5 binary, update the script to include the full path to the binary in the `Vendor` directory.
 
 ## Included
 - Some example code (in `App/Source` and `Core/Source`) to provide a starting point and test
